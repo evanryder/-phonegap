@@ -4,14 +4,10 @@
     <title>Device Ready Example</title>
     <!--
     This is auto-inserted by build.phonegap.com
-    script type="text/javascript" charset="utf-8" src="cordova.js"></script
+    script type="text/javascript" charset="utf-8" src="cordova.js"   end script
     -->
     
     <script type="text/javascript" charset="utf-8">
-    <!--
-    This is auto-inserted by build.phonegap.com
-    script type="text/javascript" charset="utf-8" src="cordova.js"></ script
-    -->
     // Wait for device API libraries to load
     //
     document.addEventListener("deviceready", onDeviceReady, false);
@@ -25,12 +21,12 @@
                         'Device Platform:'  + device.platform   + '<br />' +
                         'Device UUID:'      + device.uuid       + '<br />' +
                         'Device Model:'     + device.model      + '<br />' +
-                        'Device Version:'   + device.version    + '<br />' +
+                        'Device Version:'   + device.version    + '<br />';
     }
 
     </script>
   </head>
-  <body onload="onLoad()">
+  <body>
     <p id="deviceProperties">Loading device properties...</p>
   </body>
 </html>
