@@ -1,9 +1,29 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-    <title>test app</title>
-</head>
-<body>
+  <head>
+    <title>Device Ready Example</title>
 
-</body>
+    <script type="text/javascript" charset="utf-8">
+
+    // Wait for device API libraries to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+    
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        var el = document.getElementById('deviceProperties');
+        el.innerHTML =  'Device Name: '     + device.name       + '<br />' +
+                        'Device Cordova:'   + device.cordova    + '<br />' +
+                        'Device Platform:'  + device.platform   + '<br />' +
+                        'Device UUID:'      + device.uuid       + '<br />' +
+                        'Device Modil:'     + device.model      + '<br />' +
+                        'Device Version:'   + device.version    + '<br />' +
+    }
+
+    </script>
+  </head>
+  <body onload="onLoad()">
+    <p id="deviceProperties">Loading device properties...</p>
+  </body>
 </html>
